@@ -35,9 +35,9 @@ header {
 .logo {
     background: url(../images/rosie.jpg);
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; /* does not appear multiple times tiled */
     background-size: cover;
-    min-height: 360px;
+    min-height: 360px; /* nice minimum height as used as guide for third rations */
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -moz-webkit-transition: all .5s ease-in-out;
@@ -65,12 +65,16 @@ header {
 }
 
 .menucontainer {
-    font-size: 0;
+    font-size: 0; /* remove excess white space in page between elements */
 }
 
 #nav li {
     font-size: 14px;
     padding: 0;
+}
+
+#nav {
+    margin: 0; /* prevent automatic margins created with bootstrap */
 }
 
 .menuitem {
@@ -81,13 +85,13 @@ header {
 
 .menuitem a {
     text-decoration: none;
-    width: 100%;
+    width: 100%; /* ensure the link is across the whole item */
     height: 120px;
     color: #fff;
 }
 
-.menuitem a i {
-    padding-top: 22px;
+.menuitem a i { /* Change icon size and color */
+    padding-top: 22px; /* Give it space in the box */
     display: block;
     color: #fafafa;
     font-size: 26px;
@@ -96,10 +100,17 @@ header {
 .menuitem span {
     display: block;
     width: 100%;
-    padding-top: 5px;
+    padding-top: 5px; /* space underneath icon before the text */
     text-align: center;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 2px;
+}
+
+
+/* -------- Hover.css -------*/
+.hvr-sweep-to-bottom:before {
+    background-color: rgba(0,0,0,0.2); /* To make the hover colour slightly darker than original */
+    height: 120px;
 }
