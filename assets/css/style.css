@@ -23,6 +23,21 @@
 }
 
 
+/* -------- Special Margins/Paddings/Text -------*/
+h1,h2,h3,h4 {
+    margin: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.general-sub {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+}
+
 /* -------- Headings -------*/
 header {
     margin: 0;
@@ -33,7 +48,7 @@ header {
 }
 
 .logo {
-    background: url(../images/rosie.jpg);
+    background: url(../images/gradphoto.jpg);
     background-position: center;
     background-repeat: no-repeat; /* does not appear multiple times tiled */
     background-size: cover;
@@ -113,4 +128,13 @@ header {
 .hvr-sweep-to-bottom:before {
     background-color: rgba(0,0,0,0.2); /* To make the hover colour slightly darker than original */
     height: 120px;
+}
+
+
+/* -------- Footer -------*/
+footer {
+    background-color: #525252;
+    color: #fafafa;
+    min-height: 120px;
+    margin: 0;
 }
