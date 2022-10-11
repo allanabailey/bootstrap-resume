@@ -209,3 +209,11 @@ footer {
 
 
 /* -------- Three Reasons -------*/
+.three-reasons-icon {
+    font-size: 26px;
+    color: #e67e22; /* visual association to menu item */
+}
+
+.three-reasons-heading {
+    margin-bottom: 15px;
+}
